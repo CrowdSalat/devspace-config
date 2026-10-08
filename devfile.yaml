@@ -1,0 +1,48 @@
+schemaVersion: 2.2.0
+metadata:
+  name: multi-repo-devspace
+
+# Native Devfile Git Checkouts
+projects:
+
+  - name: ocp-gitops
+    clonePath: work/ocp-gitops
+    git:
+      remotes:
+        origin: "https://github.com/CrowdSalat/ocp-gitops.git"
+      checkoutFrom:
+        revision: "main"
+
+  - name: workstation-playbook
+    clonePath: work/workstation-playbook
+    git:
+      remotes:
+        origin: "https://github.com/CrowdSalat/workstation-playbook.git"
+      checkoutFrom:
+        revision: "main"
+
+  - name: homelab
+    clonePath: work/homelab
+    git:
+      remotes:
+        origin: "https://github.com/CrowdSalat/homelab.git"
+      checkoutFrom:
+        revision: "main"
+
+  - name: bootstrap-gh-actions
+    clonePath: work/bootstrap-gh-actions
+    git:
+      remotes:
+        origin: "https://github.com/CrowdSalat/bootstrap-gh-actions.git"
+      checkoutFrom:
+        revision: "main"
+
+components:
+- name: universal-developer-image
+  container:
+    image: registry.redhat.io/devspaces/udi-rhel9:latest
+    memoryLimit: 32Gi
+    memoryRequest: 8Gi
+    cpuLimit: "6"
+    cpuRequest: "1"
+    mountSources: true
