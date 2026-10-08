@@ -21,14 +21,6 @@ projects:
       checkoutFrom:
         revision: "main"
 
-  - name: homelab
-    clonePath: work/homelab
-    git:
-      remotes:
-        origin: "https://github.com/CrowdSalat/homelab.git"
-      checkoutFrom:
-        revision: "main"
-
   - name: bootstrap-gh-actions
     clonePath: work/bootstrap-gh-actions
     git:
