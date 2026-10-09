@@ -10,7 +10,7 @@ projects:
     clonePath: crowdsalat/ocp-gitops
     git:
       remotes:
-        origin: "https://github.com/CrowdSalat/ocp-gitops.git"
+        origin: "git@github.com:CrowdSalat/ocp-gitops.git"
       checkoutFrom:
         revision: "main"
 
@@ -18,7 +18,7 @@ projects:
     clonePath: crowdsalat/workstation-playbook
     git:
       remotes:
-        origin: "https://github.com/CrowdSalat/workstation-playbook.git"
+        origin: "git@github.com:CrowdSalat/workstation-playbook.git"
       checkoutFrom:
         revision: "main"
 
@@ -26,7 +26,39 @@ projects:
     clonePath: crowdsalat/bootstrap-gh-actions
     git:
       remotes:
-        origin: "https://github.com/CrowdSalat/bootstrap-gh-actions.git"
+        origin: "git@github.com:CrowdSalat/bootstrap-gh-actions.git"
+      checkoutFrom:
+        revision: "main"
+
+  - name: homelab
+    clonePath: crowdsalat/homelab
+    git:
+      remotes:
+        origin: "git@github.com:CrowdSalat/homelab.git"
+      checkoutFrom:
+        revision: "main"
+
+  - name: medi-bucher
+    clonePath: crowdsalat/medi-bucher
+    git:
+      remotes:
+        origin: "git@github.com:CrowdSalat/medi-bucher.git"
+      checkoutFrom:
+        revision: "main"
+
+  - name: teddycloud-spotify-radio-shim
+    clonePath: crowdsalat/teddycloud-spotify-radio-shim
+    git:
+      remotes:
+        origin: "git@github.com:CrowdSalat/teddycloud-spotify-radio-shim.git"
+      checkoutFrom:
+        revision: "main"
+
+  - name: teddycloud-mock-toniebox
+    clonePath: crowdsalat/teddycloud-mock-toniebox
+    git:
+      remotes:
+        origin: "git@github.com:CrowdSalat/teddycloud-mock-toniebox.git"
       checkoutFrom:
         revision: "main"
 
