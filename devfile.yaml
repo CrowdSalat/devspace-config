@@ -69,5 +69,5 @@ components:
     memoryLimit: 32Gi
     memoryRequest: 8Gi
     cpuLimit: "6"
-    cpuRequest: "1"
+    cpuRequest: "250m"
     mountSources: true
